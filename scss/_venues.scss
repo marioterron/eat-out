@@ -1,21 +1,16 @@
 /* Nav
 -------------------------------------------------------------- */
 .nav {
-	padding: 10px;
-	background: darken(#f25b4f, 5%);
+	padding: 15px;
+	background: #f25b4f;
 	color: #fff;
 
 	.wrapper {
 		display: flex;
 		width: 90%;
 		margin: 0 auto;
-
 		@media (min-width: 768px) {
 			width: 80%;
-		}
-
-		@media (min-width: 1024px) {
-			width: 90%;
 		}
 	}
 
@@ -24,8 +19,7 @@
 		margin-right: 20px;
 		@media (min-width: 768px) {
 			display: block;
-			width: 20%;
-			text-align: center;
+			width: 25%;
 		}
 
 		h2 {
@@ -39,14 +33,17 @@
 		width: 100%;
 		@media (min-width: 768px) {
 			display: flex;
-			width: 80%;
+			width: 75%;
 		}
 	}
 
 	.input-container {
 		@media (min-width: 768px) {
 			display: flex;
-			width: 90%;
+			width: 80%;
+		}
+		@media (min-width: 1024px) {
+			width: 85%;
 		}
 
 		input {
@@ -81,42 +78,30 @@
 			width: 20%;
 		}
 		@media (min-width: 1024px) {
-			width: 10%;
+			width: 15%;
 		}
 
 		.btn {
 			width: 100%;
+			transition: all ease-in-out .15s;
 			border: 0;
-			background-color: lighten(#f25b4f, 5%);
-			border: 1px solid lighten(#f25b4f, 5%);
+			background-color: transparent;
+			border: 1px solid #fff;
+			color: #fff;
 
 			&:hover {
+				border: 1px solid #fff;
 				background-color: #fff;
-				color: lighten(#f25b4f, 5%);
-
-				a {
-					color: lighten(#f25b4f, 5%);
-				}
-			}
-
-			a {
-				color: #fff;
-				text-decoration: none;
+				color: #f25b4f;
 			}
 		}
 	}
 }
-
-
 /* Venues
 -------------------------------------------------------------- */
-
 .venues-container {
 	width: 90%;
-	margin: 40px 0;
-	margin-right: auto;
-	margin-left: auto;
-
+	margin: 40px auto;
 	@media (min-width: 768px) {
 		width: 80%;
 	}
@@ -129,8 +114,8 @@
 		width: 100;
 		margin-bottom: 5px;
 		padding: 20px;
-		background-color: #fff;
 		border-bottom: 1px solid #d0d0d0;
+		background-color: #fff;
 
 		.img-container {
 			width: 20%;
@@ -148,26 +133,29 @@
 
 			h4 {
 				padding-bottom: 14px;
-				font-weight: 600;
-				font-size: 1.75rem;
 				color: #f25b4f;
+				font-size: 1.75rem;
+				font-weight: 600;
 			}
 
 			p {
-				font-weight: 100;
 				color: #1c1c1b;
+				font-weight: 100;
 			}
-
 		}
 	}
 }
-
 /* Footer
 -------------------------------------------------------------- */
 footer {
 	margin-top: 60px;
-	background-color: darken(#f25b4f, 5%);
+	background-color: #f25b4f;
 	color: #fff;
+
+	.wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
 
 	p {
 		padding: 20px 0;
@@ -179,6 +167,7 @@ footer {
 		position: relative;
 		margin: 0;
 		padding: 10px 0;
+		transition: all ease-in-out .15s;
 		color: #fff;
 		font-weight: 600;
 		text-decoration: none;

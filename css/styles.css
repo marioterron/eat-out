@@ -221,12 +221,14 @@ table {
           width: 20%; } }
       .cover .search-container .btn-container .btn {
         width: 100%;
+        transition: all ease-in-out .15s;
         border: 0;
         background-color: #f25b4f;
         border: 1px solid #f25b4f;
         color: #fff; }
         .cover .search-container .btn-container .btn:hover {
-          background-color: #f47167;
+          background-color: #f6877e;
+          border: 1px solid #f6877e;
           color: #fff; }
     .cover .search-container h2 {
       padding-bottom: 20px;
@@ -235,8 +237,8 @@ table {
 /* Nav
 -------------------------------------------------------------- */
 .nav {
-  padding: 10px;
-  background: #f04537;
+  padding: 15px;
+  background: #f25b4f;
   color: #fff; }
   .nav .wrapper {
     display: flex;
@@ -245,17 +247,13 @@ table {
     @media (min-width: 768px) {
       .nav .wrapper {
         width: 80%; } }
-    @media (min-width: 1024px) {
-      .nav .wrapper {
-        width: 90%; } }
   .nav .logo-container {
     display: none;
     margin-right: 20px; }
     @media (min-width: 768px) {
       .nav .logo-container {
         display: block;
-        width: 20%;
-        text-align: center; } }
+        width: 25%; } }
     .nav .logo-container h2 {
       display: inline-block;
       font-size: 2rem;
@@ -265,11 +263,14 @@ table {
     @media (min-width: 768px) {
       .nav .search-container {
         display: flex;
-        width: 80%; } }
+        width: 75%; } }
   @media (min-width: 768px) {
     .nav .input-container {
       display: flex;
-      width: 90%; } }
+      width: 80%; } }
+  @media (min-width: 1024px) {
+    .nav .input-container {
+      width: 85%; } }
   .nav .input-container input {
     width: 100%;
     margin-bottom: 10px; }
@@ -294,28 +295,24 @@ table {
         width: 20%; } }
     @media (min-width: 1024px) {
       .nav .btn-container {
-        width: 10%; } }
+        width: 15%; } }
     .nav .btn-container .btn {
       width: 100%;
+      transition: all ease-in-out .15s;
       border: 0;
-      background-color: #f47167;
-      border: 1px solid #f47167; }
+      background-color: transparent;
+      border: 1px solid #fff;
+      color: #fff; }
       .nav .btn-container .btn:hover {
+        border: 1px solid #fff;
         background-color: #fff;
-        color: #f47167; }
-        .nav .btn-container .btn:hover a {
-          color: #f47167; }
-      .nav .btn-container .btn a {
-        color: #fff;
-        text-decoration: none; }
+        color: #f25b4f; }
 
 /* Venues
 -------------------------------------------------------------- */
 .venues-container {
   width: 90%;
-  margin: 40px 0;
-  margin-right: auto;
-  margin-left: auto; }
+  margin: 40px auto; }
   @media (min-width: 768px) {
     .venues-container {
       width: 80%; } }
@@ -327,8 +324,8 @@ table {
     width: 100;
     margin-bottom: 5px;
     padding: 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #d0d0d0; }
+    border-bottom: 1px solid #d0d0d0;
+    background-color: #fff; }
     .venues-container .venue .img-container {
       width: 20%;
       margin-right: 20px; }
@@ -340,19 +337,22 @@ table {
       width: 80%; }
       .venues-container .venue .info-container h4 {
         padding-bottom: 14px;
-        font-weight: 600;
+        color: #f25b4f;
         font-size: 1.75rem;
-        color: #f25b4f; }
+        font-weight: 600; }
       .venues-container .venue .info-container p {
-        font-weight: 100;
-        color: #1c1c1b; }
+        color: #1c1c1b;
+        font-weight: 100; }
 
 /* Footer
 -------------------------------------------------------------- */
 footer {
   margin-top: 60px;
-  background-color: #f04537;
+  background-color: #f25b4f;
   color: #fff; }
+  footer .wrapper {
+    width: 90%;
+    margin: 0 auto; }
   footer p {
     padding: 20px 0;
     font-weight: 400;
@@ -361,6 +361,7 @@ footer {
     position: relative;
     margin: 0;
     padding: 10px 0;
+    transition: all ease-in-out .15s;
     color: #fff;
     font-weight: 600;
     text-decoration: none;
