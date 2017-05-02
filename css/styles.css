@@ -113,27 +113,20 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* General
+/* Landing Page
 -------------------------------------------------------------- */
-.btn-default {
-  border: 0;
-  background-color: #f25b4f;
-  color: #fff; }
-  .btn-default:hover {
-    background-color: #f47167;
-    color: #fff; }
-
-/* Cover
--------------------------------------------------------------- */
+/* cover */
 .cover {
-  height: 100vh;
-  background-image: url("http://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_large_assets/af415bdd2cda/assets/img/home/hero_photos/uq7E1Tf9g8IxXLSO9cMDOw.jpg");
-  background-size: cover;
-  background-position: center center;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
-  .cover-wrapperBackground {
+  justify-content: center;
+  height: 100vh;
+  background-image: url("http://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_large_assets/af415bdd2cda/assets/img/home/hero_photos/uq7E1Tf9g8IxXLSO9cMDOw.jpg");
+  background-position: center center;
+  background-size: cover;
+  /* title container */
+  /* search container */ }
+  .cover .filter {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -141,10 +134,7 @@ table {
     z-index: 1; }
   .cover .title-container {
     width: 90%;
-    margin-top: 20px;
-    margin-right: auto;
-    margin-bottom: 40px;
-    margin-left: auto;
+    margin: 20px auto 40px;
     color: #fff;
     text-align: center;
     z-index: 2; }
@@ -162,46 +152,167 @@ table {
     margin-bottom: 20px;
     font-size: 6.25rem;
     text-transform: uppercase; }
-
-/* search-container */
-.search-container {
-  width: 90%;
-  margin: 0 auto;
-  z-index: 2; }
-  @media (min-width: 768px) {
-    .search-container {
-      display: flex;
-      width: 80%; } }
-  @media (min-width: 1024px) {
-    .search-container {
-      width: 60%; } }
-  .search-container h2 {
-    padding-bottom: 20px;
-    text-align: center; }
-  .search-container .input-container {
-    width: 100%; }
+  .cover .search-container {
+    width: 90%;
+    margin: 0 auto;
+    z-index: 2; }
     @media (min-width: 768px) {
-      .search-container .input-container {
+      .cover .search-container {
         display: flex;
         width: 80%; } }
-    .search-container .input-container input {
-      width: 100%;
-      margin-bottom: 10px; }
+    @media (min-width: 1024px) {
+      .cover .search-container {
+        width: 60%; } }
+    .cover .search-container .input-container {
+      width: 100%; }
       @media (min-width: 768px) {
-        .search-container .input-container input:nth-child(1) {
-          width: 60%;
-          margin-right: 10px; } }
+        .cover .search-container .input-container {
+          display: flex;
+          width: 80%; } }
+      .cover .search-container .input-container input {
+        width: 100%;
+        margin-bottom: 10px; }
+        @media (min-width: 768px) {
+          .cover .search-container .input-container input:nth-child(1) {
+            width: 60%;
+            margin-right: 10px; } }
+        @media (min-width: 768px) {
+          .cover .search-container .input-container input:nth-child(2) {
+            width: 40%;
+            margin-right: 10px; } }
+    .cover .search-container .btn-container {
+      width: 100%; }
       @media (min-width: 768px) {
-        .search-container .input-container input:nth-child(2) {
-          width: 40%;
-          margin-right: 10px; } }
-  .search-container .btn-container {
+        .cover .search-container .btn-container {
+          width: 20%; } }
+      .cover .search-container .btn-container .btn-default {
+        width: 100%;
+        border: 0;
+        background-color: #f25b4f;
+        color: #fff; }
+        .cover .search-container .btn-container .btn-default:hover {
+          background-color: #f47167;
+          color: #fff; }
+    .cover .search-container h2 {
+      padding-bottom: 20px;
+      text-align: center; }
+
+/* Nav
+-------------------------------------------------------------- */
+.nav {
+  padding: 10px;
+  background: #f04537;
+  color: #fff; }
+  .nav .wrapper {
+    width: 90%;
+    display: flex;
+    margin: 0 auto; }
+    @media (min-width: 768px) {
+      .nav .wrapper {
+        width: 80%; } }
+  .nav .btn-container {
     width: 100%; }
     @media (min-width: 768px) {
-      .search-container .btn-container {
-        width: 20%; } }
-    .search-container .btn-container .btn {
-      width: 100%; }
+      .nav .btn-container {
+        width: 10%; } }
+    .nav .btn-container button {
+      width: 100%;
+      border: 0;
+      background-color: #f47167; }
+      .nav .btn-container button:hover {
+        background-color: #fff;
+        color: #f47167; }
+  .nav .logo-container {
+    display: none;
+    margin-right: 20px; }
+    @media (min-width: 768px) {
+      .nav .logo-container {
+        display: block;
+        width: 20%;
+        text-align: center; } }
+    .nav .logo-container h2 {
+      display: inline-block;
+      font-size: 3rem;
+      font-weight: 600; }
+  .nav .search-container {
+    width: 100%; }
+    @media (min-width: 768px) {
+      .nav .search-container {
+        display: flex;
+        width: 80%; } }
+  @media (min-width: 768px) {
+    .nav .input-container {
+      display: flex;
+      width: 90%; } }
+  .nav .input-container input {
+    width: 100%;
+    margin-bottom: 10px; }
+    @media (min-width: 768px) {
+      .nav .input-container input:nth-child(1) {
+        width: 70%;
+        margin-right: 10px; } }
+    @media (min-width: 768px) {
+      .nav .input-container input:nth-child(2) {
+        width: 30%;
+        margin-right: 10px; } }
 
-/* Other
+/* Venues
 -------------------------------------------------------------- */
+.venues-container {
+  width: 90%;
+  margin: 40px 0;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 768px) {
+    .venues-container {
+      width: 80%; } }
+  @media (min-width: 1024px) {
+    .venues-container {
+      width: 60%; } }
+  .venues-container .venue {
+    display: flex;
+    width: 100;
+    margin-bottom: 5px;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #d0d0d0; }
+    .venues-container .venue .img-container {
+      width: 20%;
+      margin-right: 20px; }
+      .venues-container .venue .img-container .venue-avatar {
+        width: 100%;
+        height: auto;
+        border-radius: 4px; }
+    .venues-container .venue .info-container {
+      width: 80%; }
+      .venues-container .venue .info-container h4 {
+        padding-bottom: 14px;
+        font-weight: 600;
+        font-size: 2.75rem;
+        color: #f25b4f; }
+      .venues-container .venue .info-container p {
+        font-weight: 100;
+        color: #1c1c1b; }
+
+/* Footer
+-------------------------------------------------------------- */
+footer {
+  margin-top: 60px;
+  background-color: #f25b4f;
+  color: #fff; }
+  footer p {
+    padding: 20px 0;
+    font-weight: 400;
+    text-align: center; }
+  footer a {
+    position: relative;
+    margin: 0;
+    padding: 10px 0;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer; }
+    footer a:hover {
+      top: -4px;
+      color: #fff;
+      text-decoration: none; }

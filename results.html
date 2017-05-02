@@ -1,59 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="eatApp" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Places to eat</title>
-    <!-- CSS Frameworks & Libraries -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600,900|PT+Sans:100,200,400,600">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/card.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eat Out!</title>
+	<!-- CSS Frameworks & Libraries -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600,900|PT+Sans:100,200,400,600">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <div class="venues-container">
-        <div class="venue">
-            <div class="img-container">
-                <img class="venue-avatar" src="img/foto_1.jpg" alt="Product image"  />
-            </div>
-            <div class="info-container">
-                <h4 class="venue-title">1. Bacoa</h4>
-                <p class="venue-categorie">Hamburguesería</p>
-                <p class="venue-address">Carrer Orient, 41</p>
-            </div>
-        </div>
-        <div class="venue">
-            <div class="img-container">
-                <img class="venue-avatar" src="img/foto_1.jpg" alt="Product image"/>
-            </div>
-            <div class="info-container">
-                <h4 class="venue-title">1. Bacoa</h4>
-                <p class="venue-categorie">Hamburguesería</p>
-                <p class="venue-address">Carrer Orient, 41</p>
-            </div>
-        </div>
-        <div class="venue">
-            <div class="img-container">
-                <img class="venue-avatar" src="img/foto_1.jpg" alt="Product image"/>
-            </div>
-            <div class="info-container">
-                <h4 class="venue-title">1. Bacoa</h4>
-                <p class="venue-categorie">Hamburguesería</p>
-                <p class="venue-address">Carrer Orient, 41</p>
-            </div>
-        </div>
-    </div>
-    <!-- JS Frameworks & Libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
-    <!-- Custom JS -->
-    <script src="js/app.js"></script>
-    <script src="js/controllers/searchController.js"></script>
-    <script src="js/services/foursquareService.js"></script>
+
+	<div class="nav">
+		<div class="wrapper">
+			<div class="logo-container">
+				<h2>Eat Out!</h2>
+			</div>
+			<div class="search-container">
+				<div class="input-container">
+					<input type="text" class="form-control" placeholder="sushi, hamburguesería, Burger King..">
+					<input type="text" class="form-control" placeholder="Barcelona, Spain">
+				</div>
+				<div class="btn-container">
+					<button type="submit" class="btn btn-primary aria-hidden"><i class="fa fa-search" aria-hidden="true"></i>  </button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="venues-container">
+		<div class="venue">
+			<div class="img-container">
+				<img class="venue-avatar" src="img/foto_1.jpg" alt="Product image"  />
+			</div>
+			<div class="info-container">
+				<h4 class="venue-title">1. Bacoa</h4>
+				<p class="venue-categorie">Hamburguesería</p>
+				<p class="venue-address">Carrer Orient, 41</p>
+			</div>
+		</div>
+		<div class="venue">
+			<div class="img-container">
+				<img class="venue-avatar" src="img/foto_1.jpg" alt="Product image"/>
+			</div>
+			<div class="info-container">
+				<h4 class="venue-title">1. Bacoa</h4>
+				<p class="venue-categorie">Hamburguesería</p>
+				<p class="venue-address">Carrer Orient, 41</p>
+			</div>
+		</div>
+		<div class="venue">
+			<div class="img-container">
+				<img class="venue-avatar" src="img/foto_1.jpg" alt="Product image"/>
+			</div>
+			<div class="info-container">
+				<h4 class="venue-title">1. Bacoa</h4>
+				<p class="venue-categorie">Hamburguesería</p>
+				<p class="venue-address">Carrer Orient, 41</p>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<p>&copy;2017 Eat Out! All rights reserved. Made with <span class="fa fa-heart"></span> by <a href="#">Gus</a>, <a href="#">Jordi</a> &amp <a href="http://www.twitter.com/marioterron157">Mario</a></p>
+		</div>
+	</footer>
+
 </body>
 
 </html>

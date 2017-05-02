@@ -1,174 +1,170 @@
-/* Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+/* Nav
 -------------------------------------------------------------- */
-a,
-abbr,
-acronym,
-address,
-applet,
-b,
-big,
-blockquote,
-body,
-caption,
-center,
-cite,
-code,
-dd,
-del,
-dfn,
-div,
-dl,
-dt,
-em,
-fieldset,
-font,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-html,
-i,
-iframe,
-img,
-ins,
-kbd,
-label,
-legend,
-li,
-object,
-ol,
-p,
-pre,
-q,
-s,
-samp,
-small,
-span,
-strike,
-strong,
-sub,
-sup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-tr,
-tt,
-u,
-ul,
-var {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	background: transparent;
-	vertical-align: baseline;
-}
+.nav {
+	padding: 10px;
+	background: darken(#f25b4f, 5%);
+	color: #fff;
 
-*,
-*::after,
-*::before {
-	box-sizing: border-box;
-}
+	.wrapper {
+		width: 90%;
+		display: flex;
+		margin: 0 auto;
 
-body {
-	margin: 0;
-	padding: 0;
-	color: #505050;
-	font-family: "PT Sans", sans-serif;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 1.8;
-}
+		@media (min-width: 768px) {
+			width: 80%;
+		}
+	}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 600;
-	line-height: 1;
-}
+	.btn-container {
+		width: 100%;
+		@media (min-width: 768px) {
+			width: 10%;
+		}
 
-ol,
-ul {
-	list-style: none;
-}
+		button {
+			width: 100%;
+			border: 0;
+			background-color: lighten(#f25b4f, 5%);
 
-a {
-	text-decoration: none;
-}
+			&:hover {
+				background-color: #fff;
+				color: lighten(#f25b4f, 5%);
+			}
+		}
+	}
 
-blockquote {
-	quotes: none;
-}
+	.logo-container {
+		display: none;
+		margin-right: 20px;
+		@media (min-width: 768px) {
+			display: block;
+			width: 20%;
+			text-align: center;
+		}
 
-blockquote::after,
-blockquote::before {
-	content: '';
-}
+		h2 {
+			display: inline-block;
+			font-size: 3rem;
+			font-weight: 600;
+		}
+	}
 
-del {
-	text-decoration: line-through;
-}
+	.search-container {
+		width: 100%;
+		@media (min-width: 768px) {
+			display: flex;
+			width: 80%;
+		}
+	}
 
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+	.input-container {
+		@media (min-width: 768px) {
+			display: flex;
+			width: 90%;
+		}
+
+		input {
+			width: 100%;
+			margin-bottom: 10px;
+
+			&:nth-child(1) {
+				@media (min-width: 768px) {
+					width: 70%;
+					margin-right: 10px;
+				}
+			}
+
+			&:nth-child(2) {
+				@media (min-width: 768px) {
+					width: 30%;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
 }
 
 
 /* Venues
 -------------------------------------------------------------- */
+
 .venues-container {
 	width: 90%;
-	margin: 0 auto;
+	margin: 40px 0;
+	margin-right: auto;
+	margin-left: auto;
 
 	@media (min-width: 768px) {
-		width: 80%
+		width: 80%;
+	}
+	@media (min-width: 1024px) {
+		width: 60%;
 	}
 
-	@media (min-width: 1024px) {
-		width: 60%
+	.venue {
+		display: flex;
+		width: 100;
+		margin-bottom: 5px;
+		padding: 20px;
+		background-color: #fff;
+		border-bottom: 1px solid #d0d0d0;
+
+		.img-container {
+			width: 20%;
+			margin-right: 20px;
+
+			.venue-avatar {
+				width: 100%;
+				height: auto;
+				border-radius: 4px;
+			}
+		}
+
+		.info-container {
+			width: 80%;
+
+			h4 {
+				padding-bottom: 14px;
+				font-weight: 600;
+				font-size: 2.75rem;
+				color: #f25b4f;
+			}
+
+			p {
+				font-weight: 100;
+				color: #1c1c1b;
+			}
+
+		}
 	}
 }
 
-.venue {
-	margin-bottom: 5px;
-	padding: 20px 20px;
-	width: 100;	
-	display: flex;
+/* Footer
+-------------------------------------------------------------- */
+footer {
+	margin-top: 60px;
 	background-color: #f25b4f;
+	color: #fff;
 
-
-	.img-container {
-		width: 20%;
-		margin-right: 20px;
-
-		.venue-avatar {
-			border-radius: 5px;
-			width: 100%;
-			height: auto;
-		}
+	p {
+		padding: 20px 0;
+		font-weight: 400;
+		text-align: center;
 	}
 
-	.info-container {
-		width: 80%;
+	a {
+		position: relative;
+		margin: 0;
+		padding: 10px 0;
 		color: #fff;
+		font-weight: 600;
+		text-decoration: none;
+		cursor: pointer;
 
-		p {
-			font-weight: 100;
-			margin-bottom: 5px;
-		}
-		h4 {
-			font-weight: 100;
-			padding-bottom: 8px;
+		&:hover {
+			top: -4px;
+			color: #fff;
+			text-decoration: none;
 		}
 	}
 }
