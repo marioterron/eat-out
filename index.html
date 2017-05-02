@@ -8,8 +8,7 @@
 
 	<!-- CSS Frameworks & Libraries -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600,900|PT+Sans:100,200,400,600">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="css/styles.css">
@@ -24,18 +23,17 @@
 		</div>
 		<div ng-controller="searchController" class="search-container">
 			<div class="input-container">
-				<input ng-model="query" id="search_location" class="form-control" type="text" placeholder="sushi, hamburguesería, Burger King..">
-				<input ng-model="location" id="search_query" class="form-control" type="text" placeholder="Barcelona, Spain">
+				<input ng-model="query" id="search_location" class="form-input" type="text" placeholder="sushi, hamburguesería, Burger King..">
+				<input ng-model="location" id="search_query" class="form-input" type="text" placeholder="Barcelona, Spain">
 			</div>
 			<div class="btn-container">
-				<button ng-click="searchQuery()" class="btn btn-default" type="submit">  Search  </button>
+				<button ng-click="searchQuery()" class="btn" type="submit">  Search  </button>
 			</div>
 		</div>
 	</section>
 
 	<!-- JS Frameworks & Libraries -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
 
 	<!-- Custom JS -->

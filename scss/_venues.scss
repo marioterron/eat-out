@@ -6,30 +6,16 @@
 	color: #fff;
 
 	.wrapper {
-		width: 90%;
 		display: flex;
+		width: 90%;
 		margin: 0 auto;
 
 		@media (min-width: 768px) {
 			width: 80%;
 		}
-	}
 
-	.btn-container {
-		width: 100%;
-		@media (min-width: 768px) {
-			width: 10%;
-		}
-
-		button {
-			width: 100%;
-			border: 0;
-			background-color: lighten(#f25b4f, 5%);
-
-			&:hover {
-				background-color: #fff;
-				color: lighten(#f25b4f, 5%);
-			}
+		@media (min-width: 1024px) {
+			width: 90%;
 		}
 	}
 
@@ -44,7 +30,7 @@
 
 		h2 {
 			display: inline-block;
-			font-size: 3rem;
+			font-size: 2rem;
 			font-weight: 600;
 		}
 	}
@@ -69,16 +55,53 @@
 
 			&:nth-child(1) {
 				@media (min-width: 768px) {
-					width: 70%;
+					width: 60%;
 					margin-right: 10px;
+				}
+				@media (min-width: 1024px) {
+					width: 70%;
 				}
 			}
 
 			&:nth-child(2) {
 				@media (min-width: 768px) {
-					width: 30%;
+					width: 40%;
 					margin-right: 10px;
 				}
+				@media (min-width: 1024px) {
+					width: 30%;
+				}
+			}
+		}
+	}
+
+	.btn-container {
+		width: 100%;
+		@media (min-width: 768px) {
+			width: 20%;
+		}
+		@media (min-width: 1024px) {
+			width: 10%;
+		}
+
+		.btn {
+			width: 100%;
+			border: 0;
+			background-color: lighten(#f25b4f, 5%);
+			border: 1px solid lighten(#f25b4f, 5%);
+
+			&:hover {
+				background-color: #fff;
+				color: lighten(#f25b4f, 5%);
+
+				a {
+					color: lighten(#f25b4f, 5%);
+				}
+			}
+
+			a {
+				color: #fff;
+				text-decoration: none;
 			}
 		}
 	}
@@ -126,7 +149,7 @@
 			h4 {
 				padding-bottom: 14px;
 				font-weight: 600;
-				font-size: 2.75rem;
+				font-size: 1.75rem;
 				color: #f25b4f;
 			}
 
@@ -143,7 +166,7 @@
 -------------------------------------------------------------- */
 footer {
 	margin-top: 60px;
-	background-color: #f25b4f;
+	background-color: darken(#f25b4f, 5%);
 	color: #fff;
 
 	p {

@@ -115,6 +115,40 @@ table {
 
 /* Landing Page
 -------------------------------------------------------------- */
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px; }
+
+.form-input {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; }
+
+/* Landing Page
+-------------------------------------------------------------- */
 /* cover */
 .cover {
   display: flex;
@@ -185,12 +219,13 @@ table {
       @media (min-width: 768px) {
         .cover .search-container .btn-container {
           width: 20%; } }
-      .cover .search-container .btn-container .btn-default {
+      .cover .search-container .btn-container .btn {
         width: 100%;
         border: 0;
         background-color: #f25b4f;
+        border: 1px solid #f25b4f;
         color: #fff; }
-        .cover .search-container .btn-container .btn-default:hover {
+        .cover .search-container .btn-container .btn:hover {
           background-color: #f47167;
           color: #fff; }
     .cover .search-container h2 {
@@ -204,24 +239,15 @@ table {
   background: #f04537;
   color: #fff; }
   .nav .wrapper {
-    width: 90%;
     display: flex;
+    width: 90%;
     margin: 0 auto; }
     @media (min-width: 768px) {
       .nav .wrapper {
         width: 80%; } }
-  .nav .btn-container {
-    width: 100%; }
-    @media (min-width: 768px) {
-      .nav .btn-container {
-        width: 10%; } }
-    .nav .btn-container button {
-      width: 100%;
-      border: 0;
-      background-color: #f47167; }
-      .nav .btn-container button:hover {
-        background-color: #fff;
-        color: #f47167; }
+    @media (min-width: 1024px) {
+      .nav .wrapper {
+        width: 90%; } }
   .nav .logo-container {
     display: none;
     margin-right: 20px; }
@@ -232,7 +258,7 @@ table {
         text-align: center; } }
     .nav .logo-container h2 {
       display: inline-block;
-      font-size: 3rem;
+      font-size: 2rem;
       font-weight: 600; }
   .nav .search-container {
     width: 100%; }
@@ -249,12 +275,39 @@ table {
     margin-bottom: 10px; }
     @media (min-width: 768px) {
       .nav .input-container input:nth-child(1) {
-        width: 70%;
+        width: 60%;
         margin-right: 10px; } }
+    @media (min-width: 1024px) {
+      .nav .input-container input:nth-child(1) {
+        width: 70%; } }
     @media (min-width: 768px) {
       .nav .input-container input:nth-child(2) {
-        width: 30%;
+        width: 40%;
         margin-right: 10px; } }
+    @media (min-width: 1024px) {
+      .nav .input-container input:nth-child(2) {
+        width: 30%; } }
+  .nav .btn-container {
+    width: 100%; }
+    @media (min-width: 768px) {
+      .nav .btn-container {
+        width: 20%; } }
+    @media (min-width: 1024px) {
+      .nav .btn-container {
+        width: 10%; } }
+    .nav .btn-container .btn {
+      width: 100%;
+      border: 0;
+      background-color: #f47167;
+      border: 1px solid #f47167; }
+      .nav .btn-container .btn:hover {
+        background-color: #fff;
+        color: #f47167; }
+        .nav .btn-container .btn:hover a {
+          color: #f47167; }
+      .nav .btn-container .btn a {
+        color: #fff;
+        text-decoration: none; }
 
 /* Venues
 -------------------------------------------------------------- */
@@ -288,7 +341,7 @@ table {
       .venues-container .venue .info-container h4 {
         padding-bottom: 14px;
         font-weight: 600;
-        font-size: 2.75rem;
+        font-size: 1.75rem;
         color: #f25b4f; }
       .venues-container .venue .info-container p {
         font-weight: 100;
@@ -298,7 +351,7 @@ table {
 -------------------------------------------------------------- */
 footer {
   margin-top: 60px;
-  background-color: #f25b4f;
+  background-color: #f04537;
   color: #fff; }
   footer p {
     padding: 20px 0;

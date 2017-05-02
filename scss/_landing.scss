@@ -89,10 +89,11 @@
 				width: 20%;
 			}
 
-			.btn-default {
+			.btn {
 				width: 100%;
 				border: 0;
 				background-color: #f25b4f;
+				border: 1px solid #f25b4f;
 				color: #fff;
 
 				&:hover {
