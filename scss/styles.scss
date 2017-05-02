@@ -92,7 +92,7 @@ h4,
 h5,
 h6 {
 	font-family: "Montserrat", sans-serif;
-	font-weight: 600;
+	font-weight: 400;
 	line-height: 1;
 }
 
@@ -123,50 +123,139 @@ table {
 	border-spacing: 0;
 }
 
-
-/* Search
+/* General
 -------------------------------------------------------------- */
+.btn-default {
+	border: 0;
+	background-color: #f25b4f;
+	color: #fff;
+
+	&:hover {
+		background-color: lighten(#f25b4f, 5%);
+		color: #fff;
+	}
+}
+
+/* Cover
+-------------------------------------------------------------- */
+.cover {
+	height: 100vh;
+	background-image: url('http://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_large_assets/af415bdd2cda/assets/img/home/hero_photos/uq7E1Tf9g8IxXLSO9cMDOw.jpg');
+	background-size: cover;
+	background-position: center center;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	&-wrapperBackground {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, .35);
+		z-index: 1;
+	}
+
+
+	.title-container {
+		margin-top: 20px;
+		margin-right: auto;
+		margin-bottom: 40px;
+		margin-left: auto;
+		color: #fff;
+		text-align: center;
+		z-index: 2;
+
+		.title-modifier {
+			color: #f25b4f;
+			font-weight: 600;
+		}
+
+		@media (min-width: 768px) {
+			width: 80%;
+		}
+
+		@media (min-width: 1024px) {
+			width: 60%;
+		}
+	}
+
+	h1 {
+		display: inline-block;
+		margin-bottom: 20px;
+		font-size: 6.25rem;
+		text-transform: uppercase;
+
+	}
+}
+
+/* search-container */
 .search-container {
-	width: 80%;
-	margin: 60px auto;
+	width: 90%;
+	margin: 0 auto;
+	z-index: 2;
+
+	@media (min-width: 768px) {
+		display: flex;
+		width: 80%;
+	}
+
+	@media (min-width: 1024px) {
+		width: 60%;
+	}
 
 	h2 {
 		padding-bottom: 20px;
 		text-align: center;
 	}
 
-	.description-container {
-		margin-bottom: 20px;
-		text-align: center;
-	}
-
-	.input-container input {
-		margin-bottom: 10px;
-	}
-
-	.btn-container .btn {
+	.input-container {
 		width: 100%;
+
+		@media (min-width: 768px) {
+			display: flex;
+			width: 80%;
+		}
+
+		input {
+			width: 100%;
+			margin-bottom: 10px;
+
+			&:nth-child(1) {
+				@media (min-width: 768px) {
+					width: 60%;
+					margin-right: 10px;
+				}
+			}
+
+			&:nth-child(2) {
+				@media (min-width: 768px) {
+					width: 40%;
+					margin-right: 10px;
+				}
+			}
+		}
 	}
+
+	.btn-container {
+		width: 100%;
+
+		@media (min-width: 768px) {
+			width: 20%;
+		}
+
+		button {
+			width: 100%;
+
+			@media (min-width: 768px) {
+				width: auto;
+			}
+		}
+	}
+
+
+
 }
 
-/* Venues
+/* Other
 -------------------------------------------------------------- */
-.venues-container h2 {
-	padding-bottom: 20px;
-	text-align: center;
-}
-
-.venue {
-	margin-bottom: -1px;
-	padding: 10px 15px;
-	border: 1px solid #ddd;
-	background-color: #fff;
-
-	&-title {
-		color: #2d5be3;
-	}
-
-	p {
-		color: #959b9e;
-	}
-}
