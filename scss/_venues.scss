@@ -1,0 +1,174 @@
+/* Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+a,
+abbr,
+acronym,
+address,
+applet,
+b,
+big,
+blockquote,
+body,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+font,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+object,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+small,
+span,
+strike,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+tt,
+u,
+ul,
+var {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	vertical-align: baseline;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #505050;
+	font-family: "PT Sans", sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+blockquote {
+	quotes: none;
+}
+
+blockquote::after,
+blockquote::before {
+	content: '';
+}
+
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Venues
+-------------------------------------------------------------- */
+.venues-container {
+	width: 90%;
+	margin: 0 auto;
+
+	@media (min-width: 768px) {
+		width: 80%
+	}
+
+	@media (min-width: 1024px) {
+		width: 60%
+	}
+}
+
+.venue {
+	margin-bottom: 5px;
+	padding: 20px 20px;
+	width: 100;	
+	display: flex;
+	background-color: #f25b4f;
+
+
+	.img-container {
+		width: 20%;
+		margin-right: 20px;
+
+		.venue-avatar {
+			border-radius: 5px;
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.info-container {
+		width: 80%;
+		color: #fff;
+
+		p {
+			font-weight: 100;
+			margin-bottom: 5px;
+		}
+		h4 {
+			font-weight: 100;
+			padding-bottom: 8px;
+		}
+	}
+}
