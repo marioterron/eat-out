@@ -140,6 +140,7 @@ table {
     background: rgba(0, 0, 0, 0.35);
     z-index: 1; }
   .cover .title-container {
+    width: 90%;
     margin-top: 20px;
     margin-right: auto;
     margin-bottom: 40px;
@@ -201,9 +202,6 @@ table {
         width: 20%; } }
     .search-container .btn-container .btn {
       width: 100%; }
-      @media (min-width: 768px) {
-        .search-container .btn-container .btn {
-          width: auto; } }
 
 /* Other
 -------------------------------------------------------------- */
