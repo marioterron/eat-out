@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="eatApp" lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Places to eat</title>
+
+	<!-- CSS Frameworks & Libraries -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600,900|PT+Sans:100,200,400,600">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+	<div ng-controller="searchController" class="">
+		<div class="search-container">
+			<div class="description-container">
+				<h2>Search</h2>
+				<p>Encuentra los mejores lugares para comer en cualquier ciudad del mundo. Accede a más de 75 millones de tips breves de expertos locales.</p>
+			</div>
+			<div class="input-container">
+				<input ng-model="query" id="search_location" class="form-control" type="text" placeholder="sushi, hamburguesería, Burger King..">
+				<input ng-model="location" id="search_query" class="form-control" type="text" placeholder="Barcelona, Spain">
+			</div>
+			<div class="btn-container">
+				<button ng-click="searchQuery()" class="btn btn-success" type="submit">  Search  </button>
+			</div>
+		</div>
+	</div>
+
+	<!-- JS Frameworks & Libraries -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="js/app.js"></script>
+	<script src="js/controllers/searchController.js"></script>
+	<script src="js/services/foursquareService.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+/* Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+a,
+abbr,
+acronym,
+address,
+applet,
+b,
+big,
+blockquote,
+body,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+font,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+object,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+small,
+span,
+strike,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+tt,
+u,
+ul,
+var {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	vertical-align: baseline;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #505050;
+	font-family: "PT Sans", sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+blockquote {
+	quotes: none;
+}
+
+blockquote::after,
+blockquote::before {
+	content: '';
+}
+
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Search
+-------------------------------------------------------------- */
+.search-container {
+	width: 80%;
+	margin: 60px auto;
+
+	h2 {
+		padding-bottom: 20px;
+		text-align: center;
+	}
+
+	.description-container {
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.input-container input {
+		margin-bottom: 10px;
+	}
+
+	.btn-container .btn {
+		width: 100%;
+	}
+}
+
+/* Venues
+-------------------------------------------------------------- */
+.venues-container h2 {
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.venue {
+	margin-bottom: -1px;
+	padding: 10px 15px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+
+	&-title {
+		color: #2d5be3;
+	}
+
+	p {
+		color: #959b9e;
+	}
+}
