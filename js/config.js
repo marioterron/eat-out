@@ -6,8 +6,8 @@ angular.module('eatApp')
 				templateUrl: '/templates/home.html',
 				controller: 'searchController'
 			})
-			.when('/results', {
+			.when('/search/', {
 				templateUrl: '/templates/results.html',
-				controller: 'searchController'
+				controller: 'resultsController'
 			})
 	})

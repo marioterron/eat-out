@@ -329,6 +329,8 @@ table {
     padding: 20px;
     border-bottom: 1px solid #d0d0d0;
     background-color: #fff; }
+    .venues-container .venue:last-of-type {
+      border: 0; }
     .venues-container .venue .img-container {
       display: inline-block;
       width: 88px;

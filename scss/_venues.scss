@@ -120,6 +120,10 @@
 		border-bottom: 1px solid #d0d0d0;
 		background-color: #fff;
 
+		&:last-of-type {
+			border: 0;
+		}
+
 		.img-container {
 			display: inline-block;
 			width: 88px;

@@ -1,34 +1,31 @@
-<ng-include src="'/js/templates/includes/header.html'"></ng-include>
+<header class="header">
+	<div class="wrapper">
+		<div class="logo-container">
+			<h2>Eat Out!</h2>
+		</div>
+		<div class="search-container">
+			<div class="input-container">
+				<input ng-model="query" type="text" class="form-input" placeholder="sushi, hamburguesería, Burger King..">
+				<input ng-model="location" type="text" class="form-input" placeholder="Barcelona, Spain">
+			</div>
+			<div class="btn-container">
+				<button ng-click="searchQuery()" type="submit" class="btn"><i class="fa fa-search"></i> Search </button>
+			</div>
+		</div>
+	</div>
+</header>
+
 <div class="venues-container">
-	<div class="venue">
+	<div ng-repeat="venue in venues" class="venue">
 		<div class="img-container">
-			<img class="venue-avatar" src="https://ss3.4sqi.net/img/categories_v2/food/burger_512.png" alt="Product image" />
+			<img class="venue-avatar" ng-src="{{venue.categories[0].icon.prefix}}{{imgSize}}" alt="Product image" />
 		</div>
 		<div class="info-container">
-			<h4 class="venue-title">1. Bacoa</h4>
-			<p class="venue-categorie">Hamburguesería</p>
-			<p class="venue-address">Carrer Orient, 41</p>
-		</div>
-	</div>
-	<div class="venue">
-		<div class="img-container">
-			<img class="venue-avatar" src="https://ss3.4sqi.net/img/categories_v2/food/burger_512.png" alt="Product image" />
-		</div>
-		<div class="info-container">
-			<h4 class="venue-title">1. Bacoa</h4>
-			<p class="venue-categorie">Hamburguesería</p>
-			<p class="venue-address">Carrer Orient, 41</p>
-		</div>
-	</div>
-	<div class="venue">
-		<div class="img-container">
-			<img class="venue-avatar" src="https://ss3.4sqi.net/img/categories_v2/food/burger_512.png" alt="Product image" />
-		</div>
-		<div class="info-container">
-			<h4 class="venue-title">1. Bacoa</h4>
-			<p class="venue-categorie">Hamburguesería</p>
-			<p class="venue-address">Carrer Orient, 41</p>
+			<h4 class="venue-title">{{venue.name}}</h4>
+			<p class="venue-categorie">{{venue.categories[0].name}}</p>
+			<p class="venue-address">{{venue.location.address}}</p>
 		</div>
 	</div>
 </div>
-<ng-include src="'/js/templates/includes/footer.html'"></ng-include>
+
+<ng-include src="'/templates/includes/footer.html'"></ng-include>
