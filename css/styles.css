@@ -334,7 +334,7 @@ h6 {
     width: 100%;
     margin-bottom: 5px;
     padding: 20px;
-    border-bottom: 1px solid #f6877e;
+    border-bottom: 1px solid #d0d0d0;
     background-color: #fff; }
     .venues-container .venue:last-of-type {
       border: 0; }
@@ -366,7 +366,7 @@ footer {
   background-color: #f25b4f;
   color: #fff; }
   footer .wrapper {
-    width: 90%;
+    width: 70%;
     margin: 0 auto; }
   footer p {
     padding: 20px 0;
