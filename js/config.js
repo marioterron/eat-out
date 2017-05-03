@@ -3,11 +3,11 @@ angular.module('eatApp')
 		$locationProvider.hashPrefix('')
 		$routeProvider
 			.when('/', {
-				templateUrl: '/templates/home.html',
+				templateUrl: 'templates/home.html',
 				controller: 'searchController'
 			})
 			.when('/search/', {
-				templateUrl: '/templates/results.html',
+				templateUrl: 'templates/results.html',
 				controller: 'resultsController'
 			})
 	})
