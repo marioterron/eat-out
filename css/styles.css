@@ -234,77 +234,77 @@ table {
       padding-bottom: 20px;
       text-align: center; }
 
-/* Nav
+/* Header
 -------------------------------------------------------------- */
-.nav {
+.header {
   min-width: 320px;
   padding: 15px;
   background: #f25b4f;
   color: #fff; }
-  .nav .wrapper {
+  .header .wrapper {
     display: flex;
     width: 90%;
     margin: 0 auto; }
     @media (min-width: 768px) {
-      .nav .wrapper {
+      .header .wrapper {
         width: 80%; } }
-  .nav .logo-container {
+  .header .logo-container {
     display: none;
     margin-right: 20px; }
     @media (min-width: 768px) {
-      .nav .logo-container {
+      .header .logo-container {
         display: block;
         width: 25%; } }
-    .nav .logo-container h2 {
+    .header .logo-container h2 {
       display: inline-block;
       font-size: 2rem;
       font-weight: 600; }
-  .nav .search-container {
+  .header .search-container {
     width: 100%; }
     @media (min-width: 768px) {
-      .nav .search-container {
+      .header .search-container {
         display: flex;
         width: 75%; } }
   @media (min-width: 768px) {
-    .nav .input-container {
+    .header .input-container {
       display: flex;
       width: 80%; } }
   @media (min-width: 1024px) {
-    .nav .input-container {
+    .header .input-container {
       width: 85%; } }
-  .nav .input-container input {
+  .header .input-container input {
     width: 100%;
     margin-bottom: 10px; }
     @media (min-width: 768px) {
-      .nav .input-container input:nth-child(1) {
+      .header .input-container input:nth-child(1) {
         width: 60%;
         margin-right: 10px; } }
     @media (min-width: 1024px) {
-      .nav .input-container input:nth-child(1) {
+      .header .input-container input:nth-child(1) {
         width: 70%; } }
     @media (min-width: 768px) {
-      .nav .input-container input:nth-child(2) {
+      .header .input-container input:nth-child(2) {
         width: 40%;
         margin-right: 10px; } }
     @media (min-width: 1024px) {
-      .nav .input-container input:nth-child(2) {
+      .header .input-container input:nth-child(2) {
         width: 30%; } }
-  .nav .btn-container {
+  .header .btn-container {
     width: 100%; }
     @media (min-width: 768px) {
-      .nav .btn-container {
+      .header .btn-container {
         width: 20%; } }
     @media (min-width: 1024px) {
-      .nav .btn-container {
+      .header .btn-container {
         width: 15%; } }
-    .nav .btn-container .btn {
+    .header .btn-container .btn {
       width: 100%;
       transition: all ease-in-out .15s;
       border: 0;
       border: 1px solid #fff;
       background-color: transparent;
       color: #fff; }
-      .nav .btn-container .btn:hover {
+      .header .btn-container .btn:hover {
         border: 1px solid #fff;
         background-color: #fff;
         color: #f25b4f; }
