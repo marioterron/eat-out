@@ -136,7 +136,7 @@ table {
   display: block;
   width: 100%;
   height: 34px;
-  padding: 6px 12px;
+  padding: 8px 12px;
   font-size: 14px;
   line-height: 1.42857143;
   color: #555;
@@ -237,6 +237,7 @@ table {
 /* Nav
 -------------------------------------------------------------- */
 .nav {
+  min-width: 320px;
   padding: 15px;
   background: #f25b4f;
   color: #fff; }
@@ -300,8 +301,8 @@ table {
       width: 100%;
       transition: all ease-in-out .15s;
       border: 0;
-      background-color: transparent;
       border: 1px solid #fff;
+      background-color: transparent;
       color: #fff; }
       .nav .btn-container .btn:hover {
         border: 1px solid #fff;
@@ -312,7 +313,9 @@ table {
 -------------------------------------------------------------- */
 .venues-container {
   width: 90%;
-  margin: 40px auto; }
+  min-width: 320px;
+  min-height: 460px;
+  margin: 60px auto 40px; }
   @media (min-width: 768px) {
     .venues-container {
       width: 80%; } }
@@ -321,18 +324,22 @@ table {
       width: 60%; } }
   .venues-container .venue {
     display: flex;
-    width: 100;
+    width: 100%;
     margin-bottom: 5px;
     padding: 20px;
     border-bottom: 1px solid #d0d0d0;
     background-color: #fff; }
     .venues-container .venue .img-container {
-      width: 20%;
-      margin-right: 20px; }
+      display: inline-block;
+      width: 88px;
+      height: 88px;
+      margin-right: 20px;
+      border-radius: 3px;
+      background-color: #c7cdcf;
+      line-height: 0; }
       .venues-container .venue .img-container .venue-avatar {
         width: 100%;
-        height: auto;
-        border-radius: 4px; }
+        height: 100%; }
     .venues-container .venue .info-container {
       width: 80%; }
       .venues-container .venue .info-container h4 {
@@ -347,6 +354,7 @@ table {
 /* Footer
 -------------------------------------------------------------- */
 footer {
+  min-width: 320px;
   margin-top: 60px;
   background-color: #f25b4f;
   color: #fff; }

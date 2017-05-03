@@ -1,6 +1,7 @@
 /* Nav
 -------------------------------------------------------------- */
 .nav {
+	min-width: 320px;
 	padding: 15px;
 	background: #f25b4f;
 	color: #fff;
@@ -85,8 +86,8 @@
 			width: 100%;
 			transition: all ease-in-out .15s;
 			border: 0;
-			background-color: transparent;
 			border: 1px solid #fff;
+			background-color: transparent;
 			color: #fff;
 
 			&:hover {
@@ -101,7 +102,9 @@
 -------------------------------------------------------------- */
 .venues-container {
 	width: 90%;
-	margin: 40px auto;
+	min-width: 320px;
+	min-height: 460px;
+	margin: 60px auto 40px;
 	@media (min-width: 768px) {
 		width: 80%;
 	}
@@ -111,20 +114,24 @@
 
 	.venue {
 		display: flex;
-		width: 100;
+		width: 100%;
 		margin-bottom: 5px;
 		padding: 20px;
 		border-bottom: 1px solid #d0d0d0;
 		background-color: #fff;
 
 		.img-container {
-			width: 20%;
+			display: inline-block;
+			width: 88px;
+			height: 88px;
 			margin-right: 20px;
+			border-radius: 3px;
+			background-color: #c7cdcf;
+			line-height: 0;
 
 			.venue-avatar {
 				width: 100%;
-				height: auto;
-				border-radius: 4px;
+				height: 100%;
 			}
 		}
 
@@ -148,6 +155,7 @@
 /* Footer
 -------------------------------------------------------------- */
 footer {
+	min-width: 320px;
 	margin-top: 60px;
 	background-color: #f25b4f;
 	color: #fff;

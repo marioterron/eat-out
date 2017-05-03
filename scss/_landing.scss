@@ -94,12 +94,12 @@
 				transition: all ease-in-out .15s;
 				border: 0;
 				background-color: #f25b4f;
-				border: 1px solid #f25b4f;
+				border:1px solid #f25b4f;
 				color: #fff;
 
 				&:hover {
 					background-color: lighten(#f25b4f, 10%);
-					border: 1px solid lighten(#f25b4f, 10%);
+					border:1px solid lighten(#f25b4f, 10%);
 					color: #fff;
 				}
 			}
