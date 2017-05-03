@@ -2,11 +2,11 @@ angular.module('eatApp')
 	.config(function($routeProvider, $locationProvider) {
 		$locationProvider.hashPrefix('')
 		$routeProvider
-			.when('#/', {
+			.when('', {
 				templateUrl: '/templates/home.html',
 				controller: 'searchController'
 			})
-			.when('#/search/', {
+			.when('search/', {
 				templateUrl: '/templates/results.html',
 				controller: 'resultsController'
 			})
