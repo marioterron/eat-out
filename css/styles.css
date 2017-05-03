@@ -73,25 +73,6 @@ var {
 *::before {
   box-sizing: border-box; }
 
-body {
-  margin: 0;
-  padding: 0;
-  color: #505050;
-  font-family: "PT Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.8; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  line-height: 1; }
-
 ol,
 ul {
   list-style: none; }
@@ -113,7 +94,26 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* Landing Page
+body {
+  margin: 0;
+  padding: 0;
+  color: #1c1c1b;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 1; }
+
+/* Base elements
 -------------------------------------------------------------- */
 .btn {
   display: inline-block;
@@ -147,7 +147,7 @@ table {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; }
 
-/* Landing Page
+/* Home page
 -------------------------------------------------------------- */
 /* cover */
 .cover {
@@ -185,6 +185,7 @@ table {
     display: inline-block;
     margin-bottom: 20px;
     font-size: 6.25rem;
+    font-weight: 400;
     text-transform: uppercase; }
   .cover .search-container {
     width: 90%;
@@ -234,6 +235,8 @@ table {
       padding-bottom: 20px;
       text-align: center; }
 
+/* Results page
+-------------------------------------------------------------- */
 /* Header
 -------------------------------------------------------------- */
 .header {
@@ -261,8 +264,7 @@ table {
         width: 25%; } }
     .header .logo-container h2 {
       display: inline-block;
-      font-size: 2rem;
-      font-weight: 600; }
+      font-size: 2rem; }
   .header .search-container {
     width: 100%; }
     @media (min-width: 768px) {
@@ -331,7 +333,7 @@ table {
     width: 100%;
     margin-bottom: 5px;
     padding: 20px;
-    border-bottom: 1px solid #d0d0d0;
+    border-bottom: 1px solid #f6877e;
     background-color: #fff; }
     .venues-container .venue:last-of-type {
       border: 0; }
@@ -351,10 +353,8 @@ table {
       .venues-container .venue .info-container h4 {
         padding-bottom: 14px;
         color: #f25b4f;
-        font-size: 1.75rem;
-        font-weight: 600; }
+        font-size: 1.75rem; }
       .venues-container .venue .info-container p {
-        color: #1c1c1b;
         font-weight: 100; }
 
 /* Footer

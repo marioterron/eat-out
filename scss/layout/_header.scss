@@ -1,0 +1,107 @@
+/* Header
+-------------------------------------------------------------- */
+.header {
+	min-width: 320px;
+	padding: 15px;
+	background: $c-primary;
+
+	a {
+		position: relative;
+		color: $c-white;
+
+		&:hover {
+			top: -4px;
+		}
+	}
+
+	.wrapper {
+		display: flex;
+		width: 90%;
+		margin: 0 auto;
+		@media (min-width: 768px) {
+			width: 80%;
+		}
+	}
+
+	.logo-container {
+		display: none;
+		margin-right: 20px;
+		@media (min-width: 768px) {
+			display: block;
+			width: 25%;
+		}
+
+		h2 {
+			display: inline-block;
+			font-size: 2rem;
+		}
+	}
+
+	.search-container {
+		width: 100%;
+		@media (min-width: 768px) {
+			display: flex;
+			width: 75%;
+		}
+	}
+
+	.input-container {
+		@media (min-width: 768px) {
+			display: flex;
+			width: 80%;
+		}
+		@media (min-width: 1024px) {
+			width: 85%;
+		}
+
+		input {
+			width: 100%;
+			margin-bottom: 10px;
+
+			&:nth-child(1) {
+				@media (min-width: 768px) {
+					width: 60%;
+					margin-right: 10px;
+				}
+				@media (min-width: 1024px) {
+					width: 70%;
+				}
+			}
+
+			&:nth-child(2) {
+				@media (min-width: 768px) {
+					width: 40%;
+					margin-right: 10px;
+				}
+				@media (min-width: 1024px) {
+					width: 30%;
+				}
+			}
+		}
+	}
+
+	.btn-container {
+		width: 100%;
+		@media (min-width: 768px) {
+			width: 20%;
+		}
+		@media (min-width: 1024px) {
+			width: 15%;
+		}
+
+		.btn {
+			width: 100%;
+			transition: all ease-in-out .15s;
+			border: 0;
+			border: 1px solid $c-white;
+			background-color: transparent;
+			color: $c-white;
+
+			&:hover {
+				border: 1px solid $c-white;
+				background-color: $c-white;
+				color: $c-primary;
+			}
+		}
+	}
+}

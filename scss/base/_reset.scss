@@ -1,0 +1,103 @@
+/* Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+a,
+abbr,
+acronym,
+address,
+applet,
+b,
+big,
+blockquote,
+body,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+font,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+object,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+small,
+span,
+strike,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+tt,
+u,
+ul,
+var {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	vertical-align: baseline;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+blockquote {
+	quotes: none;
+}
+
+blockquote::after,
+blockquote::before {
+	content: '';
+}
+
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

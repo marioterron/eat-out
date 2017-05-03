@@ -1,0 +1,40 @@
+// Variables
+// --------------------------------------------------------------
+
+// Colors
+$c-white:				    #fff;
+$c-black:				    #1c1c1b;
+$c-gray:				    #d0d0d0;
+
+$c-shadow:					rgba(0, 0, 0, .35);
+
+
+$c-primary:					#f25b4f;
+$c-primary-darker:			darken($c-primary, 10%);
+$c-primary-lightest:		lighten($c-primary, 10%);
+
+$c-avatar-container:		#c7cdcf;
+
+
+// Typography
+
+// Font Weights
+$fw-light:				200;
+$fw-regular:			400;
+$fw-bold:				600;
+
+//Header Fonts
+$ff-header:       		('Montserrat', sans-serif);
+$fw-header:				$fw-bold;
+
+// Base Fonts
+$ff-base:         		('PT Sans', sans-serif);
+$fw-base:				$fw-regular;
+$fz-base:				1rem;
+$lh-base:				1.4;
+
+
+// Breakpoints
+
+$bp-medium:          48em;     //768px
+$bp-large:           64em;     //1024px

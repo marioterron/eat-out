@@ -1,4 +1,18 @@
 // Imports to build the main scss
-@import 'reset';
-@import 'landing';
-@import 'venues';
+@import "helpers/variables";
+
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/base';
+
+
+/* Home page
+-------------------------------------------------------------- */
+@import 'components/cover';
+
+
+/* Results page
+-------------------------------------------------------------- */
+@import 'layout/header';
+@import 'components/venues';
+@import 'layout/footer';
