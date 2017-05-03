@@ -239,8 +239,12 @@ table {
 .header {
   min-width: 320px;
   padding: 15px;
-  background: #f25b4f;
-  color: #fff; }
+  background: #f25b4f; }
+  .header a {
+    position: relative;
+    color: #fff; }
+    .header a:hover {
+      top: -4px; }
   .header .wrapper {
     display: flex;
     width: 90%;
