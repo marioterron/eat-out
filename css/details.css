@@ -101,8 +101,12 @@ img {
 .detail-title, .rating, .detail-description, .detail-schedule, .price, .vote, .sizes {
   margin-bottom: 15px; }
 
-  .detail-schedule {
-	  color: #00b551; }
+  .detail-description a {
+	  color: #f25b4f;
+   }
+   .detail-description a:hover {
+ 	  color: #f6877d;
+    }
 
 .detail-title {
   margin-top: 0; }

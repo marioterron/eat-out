@@ -330,7 +330,7 @@ h6 {
 .map-container {
   display: none;
   width: 50%;
-  height: 623px;
+  height: 90vh;
   position: fixed;
   right: 0;
   top: 74px; }
@@ -388,7 +388,7 @@ h6 {
         height: 100%; }
     .venues-container .venue .info-container {
       width: 80%; }
-      .venues-container .venue .info-container h4 {
+      .venues-container .venue .info-container h4 a {
         padding-bottom: 14px;
         color: #f25b4f;
         font-size: 1.75rem; }

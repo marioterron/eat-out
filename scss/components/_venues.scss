@@ -7,7 +7,8 @@
 .map-container {
 	display: none;
 	width: 50%;
-	height: 623px;
+	height: 90vh;
+	// height: 623px;
 	position: fixed;
 	right: 0;
 	top: 74px;
@@ -84,7 +85,7 @@
 		.info-container {
 			width: 80%;
 
-			h4 {
+			h4 a{
 				padding-bottom: 14px;
 				color: $c-primary;
 				font-size: 1.75rem;

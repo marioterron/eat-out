@@ -27,15 +27,15 @@
 					<div class="details col-md-6">
 						<h3 class="detail-title">{{details.name}}</h3>
 						<div class="rating">
-							<h2 class="bold padding-bottom-7">{{details.rating}}<small>/ 10</small></h2>
-							<span class="review-no">{{details.ratingSignals}} reviews</span>
+							<h2 ng-show="details.rating" class="bold padding-bottom-7">{{details.rating}}<small>/ 10</small></h2>
+							<span ng-show="details.ratingSignals" class="review-no">{{details.ratingSignals}} reviews</span>
 						</div>
-						<h4 class="price">{{details.categories[0].name}} · <span>{{details.price.currency}}</span></h4>
-						<h4 class="detail-description"><i class="fa fa-compass"></i>{{details.location.address}}, <span>{{details.city}}</span></h4>
-						<p class="detail-description"><i class="fa fa-info-circle"></i>{{details.description}}</p>
-						<p class="detail-schedule"><i class="fa fa-clock-o"></i>{{details.hours.status}}</p>
-						<p class="detail-description"><i class="fa fa-mobile"></i>{{details.contact.formattedPhone}}</p>
-						<p class="detail-description"><i class="fa fa-globe"></i><a href="">{{details.url}}</a></p>
+						<h4 ng-show="details.categories[0].name" class="price">{{details.categories[0].name}} · <span>{{details.price.currency}}</span></h4>
+						<h4 ng-show="details.location.address" class="detail-description"><i class="fa fa-compass"></i>{{details.location.address}}, <span>{{details.city}}</span></h4>
+						<p ng-show="details.description" class="detail-description"><i class="fa fa-info-circle"></i>{{details.description}}</p>
+						<p ng-show="details.hours.status" class="detail-description"><i class="fa fa-clock-o"></i>{{details.hours.status}}</p>
+						<p ng-show="details.contact.formattedPhone" class="detail-description"><i class="fa fa-mobile"></i>{{details.contact.formattedPhone}}</p>
+						<p ng-show="details.url" class="detail-description"><i class="fa fa-globe"></i><a href="{{details.url}}">{{details.name}}</a></p>
 					</div>
 				</div>
 			</div>
