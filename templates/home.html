@@ -4,13 +4,13 @@
         <h1><span class="title-modifier">Eat</span> Out!</h1>
         <p>Find the best places to eat in any city in the world. Access more than 75 million short tips from local experts.</p>
     </div>
-    <div class="search-container">
+    <form class="search-container">
         <div class="input-container">
             <input ng-model="query" id="search_location" class="form-input" type="text" placeholder="burger, italian, Subway..">
-            <input ng-model="location" id="search_query" class="form-input" type="text" placeholder="Barcelona, Spain">
+            <input ng-model="location" id="search_query" class="form-input" type="text">
         </div>
         <div class="btn-container">
             <button ng-click="searchQuery()" type="submit" class="btn btn-red"><i class="fa fa-search"></i> Search </button>
         </div>
-    </div>
+    </form>
 </section>
