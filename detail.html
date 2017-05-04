@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html ng-app="eatApp" lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EAT OUT!</title>
+
+	<!-- CSS Frameworks & Libraries -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600,900|PT+Sans:100,200,400,600">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/detail.css">
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="wrapper">
+			<div class="logo-container">
+				<h2><a href="#/">Eat Out!</a></h2>
+			</div>
+			<div class="search-container">
+				<div class="input-container">
+				</div>
+				<div class="btn-container">
+					<button ng-click="searchQuery()" type="submit" class="btn"><i class="fa fa-arrow-left"></i> Go back </button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="details-section">
+		<div class="container">
+			<div class="card">
+				<div class="container-fliud">
+					<div class="wrapper row">
+						<div class="preview col-md-6">
+
+							<div class="preview-pic tab-content">
+								<div class="tab-pane active" id="pic-1"><img src="http://placekitten.com/400/252" /></div>
+								<div class="tab-pane" id="pic-2"><img src="http://placekitten.com/400/252" /></div>
+								<div class="tab-pane" id="pic-3"><img src="http://placekitten.com/400/252" /></div>
+								<div class="tab-pane" id="pic-4"><img src="http://placekitten.com/400/252" /></div>
+								<div class="tab-pane" id="pic-5"><img src="http://placekitten.com/400/252" /></div>
+							</div>
+							<ul class="preview-thumbnail nav nav-tabs">
+								<li class="active">
+									<a data-target="#pic-1" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a>
+								</li>
+								<li>
+									<a data-target="#pic-2" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a>
+								</li>
+								<li>
+									<a data-target="#pic-3" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a>
+								</li>
+								<li>
+									<a data-target="#pic-4" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a>
+								</li>
+								<li>
+									<a data-target="#pic-5" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a>
+								</li>
+							</ul>
+
+						</div>
+						<div class="details col-md-6">
+							<h3 class="detail-title">Bacoa Universitat</h3>
+							<div class="rating">
+								<h2 class="bold padding-bottom-7">9.1 <small>/ 10</small></h2>
+								<span class="review-no">1024 reviews</span>
+							</div>
+							<h4 class="price">Hamburguesería · <span>€€</span></h4>
+							<h4 class="detail-description"><i class="fa fa-compass"></i>Ronda Universitat 31, <span>Barcelona</span></h4>
+							<p class="detail-description"><i class="fa fa-info-circle"></i>Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.</p>
+							<p class="detail-schedule"><i class="fa fa-clock-o"></i>Open until 1:00 a.m.</p>
+							<p class="detail-description"><i class="fa fa-mobile"></i>932 50 72 90</p>
+							<p class="detail-description"><i class="fa fa-globe"></i><a href="">bacoaburger.com</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="wrapper">
+			<p>&copy;2017 Eat Out! All rights reserved. Made with <span class="fa fa-heart"></span> by <a href="https://github.com/gusblacknails">Gus</a>, <a href="https://github.com/tsatsan">Jordi</a> &amp <a href="https://github.com/MarioTerron">Mario</a></p>
+		</div>
+	</footer>
+
+
+	<!-- JS Frameworks & Libraries -->
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+</body>
+
+</html>
