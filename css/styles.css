@@ -269,7 +269,9 @@ h6 {
         width: 25%; } }
     .header .logo-container h2 {
       display: inline-block;
-      font-size: 2rem; }
+      font-size: 34px; }
+      .header .logo-container h2 a {
+        text-decoration: none; }
   .header .search-container {
     width: 100%; }
     @media (min-width: 768px) {
