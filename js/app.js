@@ -1,1 +1,1 @@
-angular.module('eatApp', ['ngRoute'])
+angular.module('eatApp', ['ngRoute', 'ngMap'])

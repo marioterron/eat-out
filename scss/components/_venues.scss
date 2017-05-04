@@ -1,15 +1,57 @@
+/* Section
+-------------------------------------------------------------- */
+.main-section {
+	display: flex;
+}
+
+.map-container {
+	display: none;
+	width: 50%;
+	height: 600px;
+	position: fixed;
+	right: 0;
+	top: 75px;
+
+	@media (min-width: 1024px) {
+		display: block;
+	}
+	ng-map {
+		height: 100%;
+	}
+}
+
+.info-message {
+	margin-top: 60px;
+	text-align: center;
+
+	a {
+		color: $c-primary;
+
+		&:hover {
+			text-decoration: underline;
+			color: $c-primary-lightest;
+		}
+	}
+
+	&:only-child {
+		display: none;
+	}
+}
+
 /* Venues
 -------------------------------------------------------------- */
 .venues-container {
 	width: 90%;
 	min-width: 320px;
 	min-height: 415px;
-	margin: 60px auto 40px;
+	margin: 200px 0 40px;
+	padding: 0 40px;
 	@media (min-width: 768px) {
 		width: 80%;
+		margin: 120px 0 40px;
 	}
 	@media (min-width: 1024px) {
-		width: 60%;
+		width: 50%;
 	}
 
 	.venue {
@@ -20,7 +62,7 @@
 		border-bottom: 1px solid $c-gray;
 		background-color: #fff;
 
-		&:last-of-type {
+		&:nth-last-of-type(2) {
 			border: 0;
 		}
 

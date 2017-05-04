@@ -243,7 +243,9 @@ h6 {
 .header {
   min-width: 320px;
   padding: 15px;
-  background: #f25b4f; }
+  background: #f25b4f;
+  position: fixed;
+  width: 100%; }
   .header a {
     position: relative;
     color: #fff; }
@@ -316,19 +318,50 @@ h6 {
         background-color: #fff;
         color: #f25b4f; }
 
+/* Section
+-------------------------------------------------------------- */
+.main-section {
+  display: flex; }
+
+.map-container {
+  display: none;
+  width: 50%;
+  height: 600px;
+  position: fixed;
+  right: 0;
+  top: 75px; }
+  @media (min-width: 1024px) {
+    .map-container {
+      display: block; } }
+  .map-container ng-map {
+    height: 100%; }
+
+.info-message {
+  margin-top: 60px;
+  text-align: center; }
+  .info-message a {
+    color: #f25b4f; }
+    .info-message a:hover {
+      text-decoration: underline;
+      color: #f6877e; }
+  .info-message:only-child {
+    display: none; }
+
 /* Venues
 -------------------------------------------------------------- */
 .venues-container {
   width: 90%;
   min-width: 320px;
   min-height: 415px;
-  margin: 60px auto 40px; }
+  margin: 200px 0 40px;
+  padding: 0 40px; }
   @media (min-width: 768px) {
     .venues-container {
-      width: 80%; } }
+      width: 80%;
+      margin: 120px 0 40px; } }
   @media (min-width: 1024px) {
     .venues-container {
-      width: 60%; } }
+      width: 50%; } }
   .venues-container .venue {
     display: flex;
     width: 100%;
@@ -336,7 +369,7 @@ h6 {
     padding: 20px;
     border-bottom: 1px solid #d0d0d0;
     background-color: #fff; }
-    .venues-container .venue:last-of-type {
+    .venues-container .venue:nth-last-of-type(2) {
       border: 0; }
     .venues-container .venue .img-container {
       display: inline-block;
