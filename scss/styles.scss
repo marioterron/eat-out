@@ -1,5 +1,5 @@
 // Imports to build the main scss
-@import "helpers/variables";
+@import 'utils/variables';
 
 @import 'base/reset';
 @import 'base/typography';
@@ -13,6 +13,6 @@
 
 /* Results page
 -------------------------------------------------------------- */
-@import 'layout/header';
+@import 'partials/header';
 @import 'components/venues';
-@import 'layout/footer';
+@import 'partials/footer';
