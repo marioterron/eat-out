@@ -7,7 +7,7 @@
 			<div class="input-container">
 			</div>
 			<div class="btn-container">
-				<button ng-click="searchQuery()" type="submit" class="btn"><i class="fa fa-arrow-left"></i> Go back </button>
+				<button ng-click="searchQuery()" type="submit" class="btn"><i class="fa fa-arrow-left"></i> <a href="#/"> Go back </a></button>
 			</div>
 		</div>
 	</div>
@@ -21,43 +21,21 @@
 					<div class="preview col-md-6">
 
 						<div class="preview-pic tab-content">
-							<div class="tab-pane active" id="pic-1"><img src="http://placekitten.com/400/252" /></div>
-							<div class="tab-pane" id="pic-2"><img src="http://placekitten.com/400/252" /></div>
-							<div class="tab-pane" id="pic-3"><img src="http://placekitten.com/400/252" /></div>
-							<div class="tab-pane" id="pic-4"><img src="http://placekitten.com/400/252" /></div>
-							<div class="tab-pane" id="pic-5"><img src="http://placekitten.com/400/252" /></div>
+							<div class="tab-pane active" id="pic-1"><img ng-src="{{details.bestPhoto.prefix}}original{{details.bestPhoto.suffix}}" /></div>
 						</div>
-						<ul class="preview-thumbnail nav nav-tabs">
-							<li class="active">
-								<a data-target="#pic-1" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a>
-							</li>
-							<li>
-								<a data-target="#pic-2" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a>
-							</li>
-							<li>
-								<a data-target="#pic-3" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a>
-							</li>
-							<li>
-								<a data-target="#pic-4" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a>
-							</li>
-							<li>
-								<a data-target="#pic-5" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a>
-							</li>
-						</ul>
-
 					</div>
 					<div class="details col-md-6">
-						<h3 class="detail-title">Bacoa Universitat</h3>
+						<h3 class="detail-title">{{details.name}}</h3>
 						<div class="rating">
-							<h2 class="bold padding-bottom-7">9.1 <small>/ 10</small></h2>
-							<span class="review-no">1024 reviews</span>
+							<h2 class="bold padding-bottom-7">{{details.rating}}<small>/ 10</small></h2>
+							<span class="review-no">{{details.ratingSignals}} reviews</span>
 						</div>
-						<h4 class="price">Hamburguesería · <span>€€</span></h4>
-						<h4 class="detail-description"><i class="fa fa-compass"></i>Ronda Universitat 31, <span>Barcelona</span></h4>
-						<p class="detail-description"><i class="fa fa-info-circle"></i>Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.</p>
-						<p class="detail-schedule"><i class="fa fa-clock-o"></i>Open until 1:00 a.m.</p>
-						<p class="detail-description"><i class="fa fa-mobile"></i>932 50 72 90</p>
-						<p class="detail-description"><i class="fa fa-globe"></i><a href="">bacoaburger.com</a></p>
+						<h4 class="price">{{details.categories[0].name}} · <span>{{details.price.currency}}</span></h4>
+						<h4 class="detail-description"><i class="fa fa-compass"></i>{{details.location.address}}, <span>{{details.city}}</span></h4>
+						<p class="detail-description"><i class="fa fa-info-circle"></i>{{details.description}}</p>
+						<p class="detail-schedule"><i class="fa fa-clock-o"></i>{{details.hours.status}}</p>
+						<p class="detail-description"><i class="fa fa-mobile"></i>{{details.contact.formattedPhone}}</p>
+						<p class="detail-description"><i class="fa fa-globe"></i><a href="">{{details.url}}</a></p>
 					</div>
 				</div>
 			</div>
