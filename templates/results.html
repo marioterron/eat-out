@@ -32,7 +32,7 @@
 		</div>
 	</div>
 	<div class="map-container">
-		<ng-map zoom="12" center="[41.3901026, 2.1745089]">
+		<ng-map zoom="14" center="{{venues[0].location.lat}},{{venues[0].location.lng}}">
 			<marker ng-repeat="venue in venues" position="{{venue.location.lat}},{{venue.location.lng}}"></marker>
 		</ng-map>
 	</div>

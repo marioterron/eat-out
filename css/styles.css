@@ -248,10 +248,10 @@ h6 {
   position: fixed;
   width: 100%;
   z-index: 9999; }
-  .header a {
+  .header h2 a {
     position: relative;
     color: #fff; }
-    .header a:hover {
+    .header h2 a:hover {
       top: -4px; }
   .header .wrapper {
     display: flex;
