@@ -22,7 +22,7 @@
 				<img class="venue-avatar" ng-src="{{venue.categories[0].icon.prefix}}{{imgSize}}" alt="Product image" />
 			</div>
 			<div class="info-container">
-				<h4 class="venue-title">{{$index+1}}. {{venue.name}}</h4>
+				<h4 class="venue-title"><a ng-href="#/search/{{venue.id}}">{{$index+1}}. {{venue.name}}</a></h4>
 				<p class="venue-categorie">{{venue.categories[0].name}}</p>
 				<p class="venue-address">{{venue.location.address}}, {{venue.location.city}}</p>
 			</div>

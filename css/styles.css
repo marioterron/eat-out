@@ -407,7 +407,8 @@ footer {
   footer p {
     padding: 20px 0;
     font-weight: 400;
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
   footer a {
     position: relative;
     margin: 0;

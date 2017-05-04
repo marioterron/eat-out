@@ -21,7 +21,16 @@
 					})
 			}
 
+			function _getVenueDetails(id) {
+				var url = 'https://api.foursquare.com/v2/venues/' + id + '?v=20170501&client_id=IXSMMTKC1C0EOWTOMSINDGHJLA12LXXLVIBH3J4DSKL5I3VW&client_secret=WK55K10UKPAJVGZKFI1XNCORVSKRYRLLWKFQ4TDO2U01AR2V'
+				return $http.get(url)
+					.then(function(response) {
+						return response.data.response.venue
+					})
+			}
+
 			return {
-				getVenues: _getVenues
+				getVenues: _getVenues,
+				getVenueDetails: _getVenueDetails
 			}
 		})
