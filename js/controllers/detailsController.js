@@ -1,5 +1,5 @@
 angular.module('eatApp')
-	.controller('detailController', function($scope, $routeParams, foursquareService) {
+	.controller('detailsController', function($scope, $routeParams, foursquareService) {
 
 		var idVenue = $routeParams.idVenue				// Get the idVenue from the current URL
 		$scope.showDetails = function() {

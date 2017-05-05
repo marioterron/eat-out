@@ -11,7 +11,7 @@ angular.module('eatApp')
 				controller: 'resultsController'
 			})
 			.when('/search/:idVenue', {
-				templateUrl: 'templates/detail.html',
-				controller: 'detailController'
+				templateUrl: 'templates/details.html',
+				controller: 'detailsController'
 			})
 	})
