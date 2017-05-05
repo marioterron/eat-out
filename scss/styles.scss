@@ -1,6 +1,4 @@
-// Imports to build the main scss
 @import 'utils/variables';
-
 @import 'base/reset';
 @import 'base/typography';
 @import 'base/base';
@@ -16,6 +14,7 @@
 @import 'partials/header';
 @import 'components/venues';
 @import 'partials/footer';
+
 
 /* Detail page
 -------------------------------------------------------------- */
