@@ -1,9 +1,12 @@
-/*****************globals*************/
+/* Specific styles for Detail page
+-------------------------------------------------------------- */
 
 .details-section {
 	background-color: #eee;
 	padding-bottom: 60px;
+	min-height: 620px;
 }
+
 img {
   max-width: 100%; }
 

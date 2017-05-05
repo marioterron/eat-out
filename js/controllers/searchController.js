@@ -1,7 +1,6 @@
 angular.module('eatApp')
 	.controller('searchController', function($scope, $rootScope, $location, foursquareService) {
 
-		$scope.location = 'Barcelona, Spain'
 		$scope.searchQuery = function() {
 			var query = $scope.query
 			var location = $scope.location
