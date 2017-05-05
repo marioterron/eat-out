@@ -45,13 +45,15 @@
 	width: 90%;
 	min-width: 320px;
 	min-height: 415px;
-	margin: 200px 0 40px;
+	margin: 200px auto 40px;
 	padding: 0 40px;
 	@media (min-width: $bp-medium) {
 		width: 80%;
-		margin: 120px 0 40px;
+		margin: 120px auto 40px;
 	}
 	@media (min-width: $bp-large) {
+		margin-left: 0;
+		margin-right: 0;
 		width: 50%;
 	}
 

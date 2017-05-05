@@ -357,14 +357,16 @@ h6 {
   width: 90%;
   min-width: 320px;
   min-height: 415px;
-  margin: 200px 0 40px;
+  margin: 200px auto 40px;
   padding: 0 40px; }
   @media (min-width: 768px) {
     .venues-container {
       width: 80%;
-      margin: 120px 0 40px; } }
+      margin: 120px auto 40px; } }
   @media (min-width: 1024px) {
     .venues-container {
+      margin-left: 0;
+      margin-right: 0;
       width: 50%; } }
   .venues-container .venue {
     display: flex;
@@ -433,7 +435,8 @@ footer {
   min-height: 620px; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  max-height: 320px; }
 
 .preview {
   display: -webkit-box;
