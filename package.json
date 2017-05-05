@@ -1,17 +1,19 @@
 {
-  "name": "movies-angular",
+  "name": "eat-out",
+  "homepage": "https://github.com/MarioTerron/eat-out",
   "version": "1.0.0",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Mario Terron",
+  "main": "",
+  "keywords": ["HTML","CSS","JS","AngularJS"],
+  "authors": [
+    "Gus Escolà <camagrock@gmail.com>",
+    "Jordi Costa <jordi@projectat.cat>",
+    "Mario Terron <marioterron157@gmail.com>"
+  ],
   "license": "MIT",
   "devDependencies": {
 	"gulp": "^3.9.1",
 	"gulp-connect": "^5.0.0",
 	"gulp-sass": "^3.1.0"
   },
-  "description": ""
+  "description": "A responsive web app made with AngularJS at Skylab Coders Academy Full Stack Web Development Bootcamp"
 }
