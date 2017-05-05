@@ -9,7 +9,7 @@
 ---
 
 
-## [Eat Out! Webb App](https://marioterron.github.io/eat-out)
+## [Eat Out! Web App](https://marioterron.github.io/eat-out)
 
 This repository contains a Web App made with HTML, CSS and Angular at [Skylab Coders Academy](http://www.skylabcoders.com/es/) Full Stack Web Development Bootcamp.
 
