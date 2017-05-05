@@ -22,7 +22,7 @@
 }
 
 .info-message {
-	margin-top: 60px;
+	margin-top: 40px;
 	text-align: center;
 
 	a {
@@ -32,10 +32,6 @@
 			text-decoration: underline;
 			color: $c-primary-lightest;
 		}
-	}
-
-	&:only-child {
-		display: none;
 	}
 }
 

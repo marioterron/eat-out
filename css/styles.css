@@ -341,15 +341,13 @@ h6 {
     height: 100%; }
 
 .info-message {
-  margin-top: 60px;
+  margin-top: 40px;
   text-align: center; }
   .info-message a {
     color: #f25b4f; }
     .info-message a:hover {
       text-decoration: underline;
       color: #f6877e; }
-  .info-message:only-child {
-    display: none; }
 
 /* Venues
 -------------------------------------------------------------- */
