@@ -38,6 +38,13 @@
 						<p ng-show="details.url" class="detail-description"><i class="fa fa-globe"></i><a href="{{details.url}}">{{details.name}}</a></p>
 					</div>
 				</div>
+				<div class="wrapper row">
+					<div class="details map col-md-12">
+						<ng-map zoom="14" center="{{details.location.lat}},{{details.location.lng}}">
+							<marker position="{{details.location.lat}},{{details.location.lng}}"></marker>
+						</ng-map>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

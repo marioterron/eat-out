@@ -339,6 +339,13 @@ h6 {
       display: block; } }
   .map-container ng-map {
     height: 100%; }
+  .map-container #map-link {
+    color: #f25b4f; }
+    .map-container #map-link:hover {
+      text-decoration: underline;
+      color: #f6877e; }
+  .map-container #info-window-text {
+    text-align: center; }
 
 .info-message {
   margin-top: 40px;
@@ -517,6 +524,9 @@ img {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
+
+.map {
+  margin-top: 40px; }
 
 .colors {
   -webkit-box-flex: 1;
