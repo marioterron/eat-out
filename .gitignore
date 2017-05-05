@@ -1,5 +1,4 @@
-
-# Created by https://www.gitignore.io/api/osx,sass,codekit
+# Created by https://www.gitignore.io/api/osx,sass
 
 ### OSX ###
 *.DS_Store
@@ -34,11 +33,6 @@ Temporary Items
 .sass-cache/
 *.css.map
 
-
-### CodeKit ###
-# General CodeKit files to ignore
-config.codekit3
-/min
 
 ### Gulp ###
 node_modules/

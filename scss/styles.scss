@@ -11,8 +11,12 @@
 @import 'components/cover';
 
 
-/* Results page
+/* Search page
 -------------------------------------------------------------- */
 @import 'partials/header';
 @import 'components/venues';
 @import 'partials/footer';
+
+/* Detail page
+-------------------------------------------------------------- */
+@import 'pages/detail';

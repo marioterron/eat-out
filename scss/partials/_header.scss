@@ -21,7 +21,7 @@
 		display: flex;
 		width: 90%;
 		margin: 0 auto;
-		@media (min-width: 768px) {
+		@media (min-width: $bp-medium) {
 			width: 80%;
 		}
 	}
@@ -29,7 +29,7 @@
 	.logo-container {
 		display: none;
 		margin-right: 20px;
-		@media (min-width: 768px) {
+		@media (min-width: $bp-medium) {
 			display: block;
 			width: 25%;
 		}
@@ -45,14 +45,14 @@
 
 	.search-container {
 		width: 100%;
-		@media (min-width: 768px) {
+		@media (min-width: $bp-medium) {
 			display: flex;
 			width: 75%;
 		}
 	}
 
 	.input-container {
-		@media (min-width: 768px) {
+		@media (min-width: $bp-medium) {
 			display: flex;
 			width: 80%;
 		}
@@ -65,7 +65,7 @@
 			margin-bottom: 10px;
 
 			&:nth-child(1) {
-				@media (min-width: 768px) {
+				@media (min-width: $bp-medium) {
 					width: 60%;
 					margin-right: 10px;
 				}
@@ -75,7 +75,7 @@
 			}
 
 			&:nth-child(2) {
-				@media (min-width: 768px) {
+				@media (min-width: $bp-medium) {
 					width: 40%;
 					margin-right: 10px;
 				}
@@ -88,7 +88,7 @@
 
 	.btn-container {
 		width: 100%;
-		@media (min-width: 768px) {
+		@media (min-width: $bp-medium) {
 			width: 20%;
 		}
 		@media (min-width: 1024px) {

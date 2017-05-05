@@ -13,7 +13,7 @@
 	right: 0;
 	top: 74px;
 
-	@media (min-width: 1024px) {
+	@media (min-width: $bp-large) {
 		display: block;
 	}
 	ng-map {
@@ -47,11 +47,11 @@
 	min-height: 415px;
 	margin: 200px 0 40px;
 	padding: 0 40px;
-	@media (min-width: 768px) {
+	@media (min-width: $bp-medium) {
 		width: 80%;
 		margin: 120px 0 40px;
 	}
-	@media (min-width: 1024px) {
+	@media (min-width: $bp-large) {
 		width: 50%;
 	}
 

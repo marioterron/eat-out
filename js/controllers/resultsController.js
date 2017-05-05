@@ -1,7 +1,7 @@
 angular.module('eatApp')
 	.controller('resultsController', function($scope, $rootScope, foursquareService) {
 
-		$scope.imgSize = '512.png';
+		$scope.imgSize = '512.png';       // Global var
 		$scope.searchQuery = function() {
 			var query = $scope.query
 			var location = $scope.location

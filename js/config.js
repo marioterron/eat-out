@@ -1,6 +1,6 @@
 angular.module('eatApp')
 	.config(function($routeProvider, $locationProvider) {
-		$locationProvider.hashPrefix('')
+		$locationProvider.hashPrefix('')				// For fix URL issues "/!#/" -> "/#/"
 		$routeProvider
 			.when('/', {
 				templateUrl: 'templates/home.html',
@@ -11,7 +11,7 @@ angular.module('eatApp')
 				controller: 'resultsController'
 			})
 			.when('/search/:idVenue', {
-				templateUrl: 'templates/details.html',
-				controller: 'detailsController'
+				templateUrl: 'templates/detail.html',
+				controller: 'detailController'
 			})
 	})

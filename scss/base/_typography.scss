@@ -2,10 +2,10 @@ body {
 	margin: 0;
 	padding: 0;
 	color: $c-black;
-	font-family: "PT Sans", sans-serif;
-	font-size: 16px;
+	font-family: $ff-base;
+	font-size: $fz-base;
 	font-weight: $fw-regular;
-	line-height: 1.8;
+	line-height: $lh-base;
 }
 
 h1,
@@ -14,7 +14,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Montserrat", sans-serif;
+	font-family: $ff-header;
 	font-weight: $fw-bold;
-	line-height: 1;
+	line-height: $lh-header;
 }

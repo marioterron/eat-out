@@ -20,10 +20,10 @@
 			color: $c-primary;
 			font-weight: $fw-bold;
 		}
-		@media (min-width: 768px) {
+		@media (min-width: $bp-medium) {
 			width: 80%;
 		}
-		@media (min-width: 1024px) {
+		@media (min-width: $bp-large) {
 			width: 60%;
 		}
 	}
@@ -41,17 +41,17 @@
 		width: 90%;
 		margin: 0 auto;
 		z-index: 2;
-		@media (min-width: 768px) {
+		@media (min-width: $bp-medium) {
 			display: flex;
 			width: 80%;
 		}
-		@media (min-width: 1024px) {
+		@media (min-width: $bp-large) {
 			width: 60%;
 		}
 
 		.input-container {
 			width: 100%;
-			@media (min-width: 768px) {
+			@media (min-width: $bp-medium) {
 				display: flex;
 				width: 80%;
 			}
@@ -61,14 +61,14 @@
 				margin-bottom: 10px;
 
 				&:nth-child(1) {
-					@media (min-width: 768px) {
+					@media (min-width: $bp-medium) {
 						width: 60%;
 						margin-right: 10px;
 					}
 				}
 
 				&:nth-child(2) {
-					@media (min-width: 768px) {
+					@media (min-width: $bp-medium) {
 						width: 40%;
 						margin-right: 10px;
 					}
@@ -78,7 +78,7 @@
 
 		.btn-container {
 			width: 100%;
-			@media (min-width: 768px) {
+			@media (min-width: $bp-medium) {
 				width: 20%;
 			}
 

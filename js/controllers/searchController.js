@@ -8,8 +8,7 @@ angular.module('eatApp')
 			$rootScope.location = location					// Here we save the user input in $rootScope for use in the next page
 			foursquareService.getVenues(query, location)
 				.then(function(data) {
-					$scope.venues = data
-					$rootScope.venues = $scope.venues
+					$rootScope.venues = data
 				})
 			$location.path('/search/')				//At the end go to the '/search/' location
 		}

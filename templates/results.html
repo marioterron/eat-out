@@ -16,6 +16,7 @@
 </header>
 
 <section class="main-section">
+
 	<div class="venues-container">
 		<div ng-repeat="venue in venues" class="venue">
 			<div class="img-container">
@@ -27,13 +28,16 @@
 				<p class="venue-address">{{venue.location.address}}, {{venue.location.city}}</p>
 			</div>
 		</div>
+
 		<div class="info-message">
 			<p>Don't see the place you're looking for? <a href="https://es.foursquare.com/add-place?ll=41.38974439447691%2C2.1639633178710938">Add a new place to Foursquare</a></p>
 		</div>
 	</div>
+
 	<div class="map-container">
 		<ng-map zoom="14" center="{{venues[0].location.lat}},{{venues[0].location.lng}}">
 			<marker ng-repeat="venue in venues" position="{{venue.location.lat}},{{venue.location.lng}}"></marker>
 		</ng-map>
 	</div>
+
 </section>
