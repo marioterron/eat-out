@@ -1,4 +1,5 @@
-[![AngularJS](https://github.com/MarioTerron/logo-images/blob/master/logos/angularjs.png)](https://angularjs.org/) [![HTML5 and CSS3](https://github.com/MarioTerron/logo-images/blob/master/logos/html5andcss3.png)](http://www.w3.org/) [![Bootstrap](https://github.com/MarioTerron/logo-images/blob/master/logos/bootstrap.png)](http://getbootstrap.com/) [![Bower](https://github.com/MarioTerron/logo-images/blob/master/logos/bower.png)](https://bower.io/) [![SASS](https://github.com/MarioTerron/logo-images/blob/master/logos/sass.png)](http://sass-lang.com/)
+[![AngularJS](https://github.com/MarioTerron/logo-images/blob/master/logos/angularjs.png)](https://angularjs.org/) [![HTML5 and CSS3](https://github.com/MarioTerron/logo-images/blob/master/logos/html5andcss3.png)](http://www.w3.org/)
+[![SASS](https://github.com/MarioTerron/logo-images/blob/master/logos/sass.png)](http://sass-lang.com/) [![Bootstrap](https://github.com/MarioTerron/logo-images/blob/master/logos/bootstrap.png)](http://getbootstrap.com/)
 
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
