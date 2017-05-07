@@ -1,19 +1,4 @@
-<header class="header">
-	<div class="wrapper">
-		<div class="logo-container">
-			<h2><a href="#/">Eat Out!</a></h2>
-		</div>
-		<form class="search-container">
-			<div class="input-container">
-				<input ng-model="query" type="text" class="form-input" placeholder="sushi, hamburguesería, Burger King..">
-				<input ng-model="location" type="text" class="form-input" placeholder="Barcelona, Spain">
-			</div>
-			<div class="btn-container">
-				<button ng-click="searchQuery()" type="submit" class="btn btn-red"><i class="fa fa-search"></i> Search </button>
-			</div>
-		</form>
-	</div>
-</header>
+<ng-include src="'templates/includes/header.html'" ng-controller="resultsController"></ng-include>
 
 <section class="main-section">
 
@@ -34,19 +19,6 @@
 		</div>
 	</div>
 
-	<div class="map-container">
-		<ng-map default-style="false" zoom="14" center="{{venues[0].location.lat}},{{venues[0].location.lng}}">
-			<div ng-repeat="venue in venues">
-				<marker id="venue{{$index}}" animation="DROP" position="{{venue.location.lat}},{{venue.location.lng}}" on-click="map.showInfoWindow('info{{$index}}')">
-				</marker>
-				<info-window id="info{{$index}}" max-width="200">
-					<div>
-						<strong><a class="map-link text-center" href="#/search/{{venue.id}}">{{venue.name}}</a></strong>
-					</div>
-				</info-window>
-			</div>
-		</ng-map>
-
-	</div>
+	<ng-include src="'templates/includes/map.html'" ng-controller="resultsController"></ng-include>
 
 </section>

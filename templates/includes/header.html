@@ -1,16 +1,16 @@
 <header class="header">
 	<div class="wrapper">
 		<div class="logo-container">
-			<h2>Eat Out!</h2>
+			<h2><a href="#/">Eat Out!</a></h2>
 		</div>
-		<div class="search-container">
+		<form class="search-container">
 			<div class="input-container">
 				<input ng-model="query" type="text" class="form-input" placeholder="sushi, hamburguesería, Burger King..">
 				<input ng-model="location" type="text" class="form-input" placeholder="Barcelona, Spain">
 			</div>
 			<div class="btn-container">
-				<button ng-click="searchQuery()" type="submit" class="btn"><i class="fa fa-search"></i> Search </button>
+				<button ng-click="searchQuery()" type="submit" class="btn btn-red"><i class="fa fa-search"></i> Search </button>
 			</div>
-		</div>
+		</form>
 	</div>
 </header>
