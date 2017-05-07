@@ -35,13 +35,13 @@
 	</div>
 
 	<div class="map-container">
-		<ng-map zoom="14" center="{{venues[0].location.lat}},{{venues[0].location.lng}}">
+		<ng-map default-style="false" zoom="14" center="{{venues[0].location.lat}},{{venues[0].location.lng}}">
 			<div ng-repeat="venue in venues">
-				<marker id="venue{{$index}}" animation="DROP" position="{{venue.location.lat}},{{venue.location.lng}}" on-click="map.showInfoWindow('venue{{$index}}')">
+				<marker id="venue{{$index}}" animation="DROP" position="{{venue.location.lat}},{{venue.location.lng}}" on-click="map.showInfoWindow('info{{$index}}')">
 				</marker>
-				<info-window id="venue{{$index}}">
+				<info-window id="info{{$index}}" max-width="200">
 					<div>
-						<h6><a id="map-link" class="btn" href="#/search/{{venue.id}}">{{venue.name}}</a></h6>
+						<strong><a class="map-link text-center" href="#/search/{{venue.id}}">{{venue.name}}</a></strong>
 					</div>
 				</info-window>
 			</div>

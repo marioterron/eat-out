@@ -1,11 +1,12 @@
 /* Header
 -------------------------------------------------------------- */
 .header {
+	position: fixed;
+	top: 0;
+	width: 100%;
 	min-width: 320px;
 	padding: 15px;
 	background: $c-primary;
-	position: fixed;
-	width: 100%;
 	z-index: 9999;
 
 	h2 a {
@@ -37,7 +38,8 @@
 		h2 {
 			display: inline-block;
 			font-size: 34px;
-			a{
+
+			a {
 				text-decoration: none;
 			}
 		}

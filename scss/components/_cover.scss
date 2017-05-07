@@ -20,6 +20,7 @@
 			color: $c-primary;
 			font-weight: $fw-bold;
 		}
+
 		@media (min-width: $bp-medium) {
 			width: 80%;
 		}
@@ -87,12 +88,12 @@
 				transition: all ease-in-out .15s;
 				border: 0;
 				background-color: $c-primary;
-				border:1px solid $c-primary;
+				border: 1px solid $c-primary;
 				color: $c-white;
 
 				&:hover {
+					border: 1px solid $c-primary-lightest;
 					background-color: $c-primary-lightest;
-					border:1px solid $c-primary-lightest;
 					color: $c-white;
 				}
 			}

@@ -2,35 +2,36 @@
 -------------------------------------------------------------- */
 .main-section {
 	display: flex;
+	height: 100%;
+	padding-top: 152px;
+
+	@media (min-width: $bp-medium) {
+		padding-top: 74px;
+	}
 }
 
 .map-container {
 	display: none;
-	width: 50%;
-	height: 90vh;
-	// height: 623px;
 	position: fixed;
 	right: 0;
-	top: 74px;
+	width: 50%;
+	height: 100%;
 
 	@media (min-width: $bp-large) {
 		display: block;
 	}
+
 	ng-map {
 		height: 100%;
 	}
 
-	.map-link{
+	.map-link {
 		color: $c-primary;
 
 		&:hover {
-			text-decoration: underline;
 			color: $c-primary-lightest;
+			text-decoration: underline;
 		}
-	}
-
-	#info-window-text {
-		text-align: center;
 	}
 }
 
@@ -42,8 +43,8 @@
 		color: $c-primary;
 
 		&:hover {
-			text-decoration: underline;
 			color: $c-primary-lightest;
+			text-decoration: underline;
 		}
 	}
 }
@@ -54,16 +55,17 @@
 	width: 90%;
 	min-width: 320px;
 	min-height: 415px;
-	margin: 200px auto 40px;
+	margin: 0 auto 40px;
 	padding: 0 40px;
+
 	@media (min-width: $bp-medium) {
 		width: 80%;
-		margin: 120px auto 40px;
 	}
+
 	@media (min-width: $bp-large) {
-		margin-left: 0;
-		margin-right: 0;
 		width: 50%;
+		margin-right: 0;
+		margin-left: 0;
 	}
 
 	.venue {
@@ -96,7 +98,7 @@
 		.info-container {
 			width: 80%;
 
-			h4 a{
+			h4 a {
 				padding-bottom: 14px;
 				color: $c-primary;
 				font-size: 1.75rem;

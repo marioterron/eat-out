@@ -230,8 +230,8 @@ h6 {
         border: 1px solid #f25b4f;
         color: #fff; }
         .cover .search-container .btn-container .btn:hover {
-          background-color: #f6877e;
           border: 1px solid #f6877e;
+          background-color: #f6877e;
           color: #fff; }
     .cover .search-container h2 {
       padding-bottom: 20px;
@@ -242,11 +242,12 @@ h6 {
 /* Header
 -------------------------------------------------------------- */
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   min-width: 320px;
   padding: 15px;
   background: #f25b4f;
-  position: fixed;
-  width: 100%;
   z-index: 9999; }
   .header h2 a {
     position: relative;
@@ -325,27 +326,29 @@ h6 {
 /* Section
 -------------------------------------------------------------- */
 .main-section {
-  display: flex; }
+  display: flex;
+  height: 100%;
+  padding-top: 152px; }
+  @media (min-width: 768px) {
+    .main-section {
+      padding-top: 74px; } }
 
 .map-container {
   display: none;
-  width: 50%;
-  height: 90vh;
   position: fixed;
   right: 0;
-  top: 74px; }
+  width: 50%;
+  height: 100%; }
   @media (min-width: 1024px) {
     .map-container {
       display: block; } }
   .map-container ng-map {
     height: 100%; }
-  .map-container #map-link {
+  .map-container .map-link {
     color: #f25b4f; }
-    .map-container #map-link:hover {
-      text-decoration: underline;
-      color: #f6877e; }
-  .map-container #info-window-text {
-    text-align: center; }
+    .map-container .map-link:hover {
+      color: #f6877e;
+      text-decoration: underline; }
 
 .info-message {
   margin-top: 40px;
@@ -353,8 +356,8 @@ h6 {
   .info-message a {
     color: #f25b4f; }
     .info-message a:hover {
-      text-decoration: underline;
-      color: #f6877e; }
+      color: #f6877e;
+      text-decoration: underline; }
 
 /* Venues
 -------------------------------------------------------------- */
@@ -362,17 +365,16 @@ h6 {
   width: 90%;
   min-width: 320px;
   min-height: 415px;
-  margin: 200px auto 40px;
+  margin: 0 auto 40px;
   padding: 0 40px; }
   @media (min-width: 768px) {
     .venues-container {
-      width: 80%;
-      margin: 120px auto 40px; } }
+      width: 80%; } }
   @media (min-width: 1024px) {
     .venues-container {
-      margin-left: 0;
+      width: 50%;
       margin-right: 0;
-      width: 50%; } }
+      margin-left: 0; } }
   .venues-container .venue {
     display: flex;
     width: 100%;
@@ -412,10 +414,10 @@ footer {
     width: 70%;
     margin: 0 auto; }
   footer p {
+    width: 100%;
     padding: 20px 0;
     font-weight: 400;
-    text-align: center;
-    width: 100%; }
+    text-align: center; }
   footer a {
     position: relative;
     margin: 0;
